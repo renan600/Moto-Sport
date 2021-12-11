@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/*Corpo*/
+.img-baner{
+    width: 100%;
+    margin-top: -3px;
+}
+main{
+    margin-top: -5px;
+    background-image: linear-gradient(to top , #313131 ,#CCCCCC, white);
+}
+/*Sobre*/
+.sobre{
+    min-width:280px;
+    max-width:1200px;
+    padding:30px 10px 30px 10px;
+    margin: auto;
+}
+.titulo-principal{
+    text-align: center;
+    margin: 0 0 1em;
+    font-size: 2em;
+    clear: left;
+    text-transform: uppercase;
+    font-weight:600;
+}
+.sobre em{
+    color: #FF0000;
+}
+.img-sobre{
+    float: left;
+    width: 135px;
+    margin-right:20px;
+}
+.sobre p {
+    line-height:1.6em;
+    text-align: justify;
+    margin: 0 0 1em;
+}
+/*Mapa*/
+.maps{
+    min-width:280px;
+    max-width:1200px;
+    padding:30px 10px 30px 10px;
+    margin: auto;
+}
+.maps p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+/*Beneficios*/
+
+.beneficios{
+    min-width:280px;
+    max-width:1200px;
+    padding:30px 10px 30px 10px;
+    margin: auto;
+}
+.div-beneficios{
+    min-width:280px;
+    max-width:900px;
+    margin: auto;
+}
+.ul-beneficios{
+    display: inline-block;
+    vertical-align: top;
+    width:40%;
+}
+.li-beneficios{
+    list-style: none;
+    line-height:1.7em;
+    font-size:1.2em;
+}
+.li-beneficios:first-child{
+    font-weight: bold;
+}
+.li-beneficios::before{
+    content: "\2605";
+}
+.img-moto-yamaha{
+    width:60%;
+    box-shadow: 2px 2px 8px black;
+    transition: 0.7s;
+}
+.img-moto-yamaha:hover{
+    opacity: 0.2;
+}
+/*Video*/
+
+.video{
+    min-width:280px;
+    max-width:560px;
+    margin:30px auto 0px auto;
+}
+.video iframe{
+    width:100%;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.671);
+}
+
+/*Mobile*/
+
+@media screen and (max-width:670px) {
+.titulo-principal{
+    font-size:1.5em ;
+}
+.ul-beneficios{
+    width:210px;
+    margin: 0px auto 30px auto;
+    display: block;
+}
+.li-beneficios{
+    margin: auto;
+    display: block;
+}
+.img-moto-yamaha{
+    display: block;
+    margin: auto;
+    width:100%;
+}
+.video{
+    position:relative;
+    padding-bottom:56%; 
+    max-width: 740px;
+  
+}
+.video iframe{
+    position: absolute;
+    width:100%;
+    height:100%;
+   
+}
+
+}
+
+@media screen and (max-width:445px) {
+    .titulo-principal{
+        font-size:1.3em ;
+    }
+    .img-sobre{
+        width:110px;
+    }
+    .sobre p {
+        font-size: 14px;
+    }
+    .maps p {
+        font-size: 14px;
+    }
+    
+}

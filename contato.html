@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato.css">
+    <title>Moto-Sport Yamaha - Contato</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1>
+                <a href="index.html" target="_self" rel="internal" class="img-logo">
+                    <img src="imagens/logo-yamaha.png" alt="Logo moto club" class="img-logo">
+                </a>
+            </h1>
+            <nav>
+                <ul class="ul-menu">
+                    <li class="li-menu"><a href="index.html" target="_self" rel="internal">Home</a></li>
+                    <li class="li-menu"><a href="produto.html" target="_self" rel="internal">Produto</a></li>
+                    <li class="li-menu"><a href="contato.html" target="_self" rel="internal">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2 class="titulo-principal">Faça seu cadastro e receba nossas novidades</h2>
+        <form action="">
+            <label for="name" class="label-inputs">Nome e Sobrenome</label>
+            <input type="text" name="name" id="name" class="input" required>
+
+            <label for="email" class="label-inputs">Email</label>
+            <input type="email" name="email" id="email" class="input" required placeholder="seunome@dominio.com">
+
+            <label for="phone" class="label-inputs">Telefone</label>
+            <input type="number" name="phone" id="phone" class="input" required placeholder="(XX)X XXXX-XXXX">
+
+            <label for="text-area" class="label-inputs">Deixe o seu comentário</label>
+            <textarea name="text-area" id="text-area" cols="30" rows="7" required></textarea>
+
+            <fieldset>
+                <legend>Qual forma de contato prefere?</legend>
+                <label for="forma-phone" class="label-radio"><input type="radio" name="forma-contato" id="forma-phone" checked > Telefone</label>
+                <label for="forma-wathsapp" class="label-radio"><input type="radio" name="forma-contato" id="forma-wathsapp"> Wathsapp</label>
+                <label for="forma-email" class="label-radio"><input type="radio" name="forma-contato" id="forma-email"> Email</label>
+            </fieldset>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select name="select-perildo" id="select-perildo">
+                    <option value="Manha">Manha</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                </select>
+            </fieldset>
+
+            <label for="checkbox" class="label-radio" ><input type="checkbox" name="checkbox" id="checkbox" checked> Gostaria de receber nossas novidades por Email?</label>
+
+            <button type="submit" class="btn">Enviar Relatório</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-Feira</td>
+                    <td>08:00 ~ 12:00 / 01:30 ~ 18:00</td>
+                </tr>
+                <tr>
+                    <td>Terça-Feira</td>
+                    <td>08:00 ~ 12:00 / 01:30 ~ 18:00</td>
+                </tr>
+                <tr>
+                    <td>Quarta-Feira</td>
+                    <td>08:00 ~ 12:00 / 01:30 ~ 18:00</td>
+                </tr>
+                <tr>
+                    <td>Quinta-Feira</td>
+                    <td>08:00 ~ 12:00 / 01:30 ~ 18:00</td>
+                </tr>
+                <tr>
+                    <td>Sexta-Feira</td>
+                    <td>08:00 ~ 12:00 / 01:30 ~ 18:00</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>08:00 ~ 12:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <a href="index.html" target="_self" rel="internal"><img src="imagens/logo-yamaha.png" alt="logo moto club"></a>
+        <p> &copy; Copyright Moto-Sport - 2021</p>
+    </footer>
+</body>
+</html>
